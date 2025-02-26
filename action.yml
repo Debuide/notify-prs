@@ -1,0 +1,17 @@
+name: 'Notify PRs'
+description: 'Triggers workflows for all open pull requests'
+author: 'Your Name'
+
+inputs:
+  github-token:
+    description: 'GitHub token for API access'
+    required: true
+    default: ${{ github.token }}
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'git-pull-request'
+  color: 'blue' 
