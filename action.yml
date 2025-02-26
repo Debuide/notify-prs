@@ -1,6 +1,6 @@
 name: 'Notify PRs'
 description: 'Triggers workflows for all open pull requests'
-author: 'Your Name'
+author: 'Debuide Org'
 
 inputs:
   github-token:
