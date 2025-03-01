@@ -10,6 +10,26 @@ When changes are pushed to the main branch, existing pull requests might become 
 - Prevents merging of potentially incompatible PRs
 - Maintains code quality by keeping PRs in sync with main
 
+## Usage
+
+```yaml
+
+name: PR Refresh Workflow
+on:
+  push:
+    branches:
+      - main # or your default branch
+  jobs:
+    refresh:
+      runs-on: ubuntu-latest
+    steps:
+      - name: PRs-Refresh
+        if: github.ref == 'refs/heads/main'
+        uses: debuide/pr-refresh@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
 ## How It Works
 
 1. When new code is pushed to main branch

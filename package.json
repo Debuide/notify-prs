@@ -1,11 +1,10 @@
 {
-  "name": "notify-prs",
+  "name": "pr-refresh",
   "version": "1.0.0",
-  "description": "GitHub Action to trigger workflows for all open pull requests",
+  "description": "GitHub Action to refresh all open PRs when main branch is updated",
   "main": "index.js",
   "scripts": {
-    "build": "ncc build index.js -o dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "ncc build index.js -o dist"
   },
   "keywords": [
     "github",
@@ -13,13 +12,11 @@
     "status",
     "check"
   ],
-  "author": "Debuide",
+  "author": "Debuide Org",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.11.1",
-    "@actions/github": "^2.2.0",
-    "axios": "^1.8.0",
-    "fs": "^0.0.1-security"
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.36.1"
