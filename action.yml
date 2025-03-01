@@ -1,5 +1,5 @@
-name: 'Notify PRs'
-description: 'Triggers workflows for all open pull requests'
+name: 'PR Refresh'
+description: 'Automatically triggers workflow checks on open PRs when the base branch (main) is updated'
 author: 'Debuide Org'
 
 inputs:
